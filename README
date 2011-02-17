@@ -1,0 +1,22 @@
+distance_sensor_118X
+--------------------
+Provides and interface to the micro-epsilon optoNCDT ILR 118X laser distance
+sensors.
+
+Usage Examples:
+
+    sensor = DistanceSensor('/dev/ttyUSB0', baudrate=9600)
+    sensor.open()
+
+    value = sensor.getDistance() # Single shot measurement
+
+    # Stream data from sensor
+    sensor.startTracking('50hz')
+    for i in range(0,num_samples):
+        value = sensor.readSample(convert='float')
+
+    sensor.close()
+
+Author: Will Dickson, IO Rodeo Inc.
+
+
