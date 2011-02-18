@@ -1,6 +1,6 @@
 distance_sensor_118X
 --------------------
-Provides and interface to the micro-epsilon optoNCDT ILR 118X laser distance
+Provides an interface to the micro-epsilon optoNCDT ILR 118X laser distance
 sensors.
 
 Usage Examples:
